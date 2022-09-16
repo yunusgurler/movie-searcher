@@ -1,6 +1,5 @@
-*{
+* {
   font-family: 'Courier New', Courier, monospace;
-
 }
 
 .container {
@@ -11,11 +10,12 @@
   border-radius: 10px;
   box-shadow: 0px 0px 120px -25px
 }
+
 img {
   background-color: black;
 }
-.img-container {
 
+.img-container {
   width: 75%;
   height: 15%;
 }
@@ -24,19 +24,19 @@ img {
   margin-left: 30%;
   white-space: pre-wrap;
 }
-.category{
+
+.category {
   text-align: center;
   background-color: black;
   color: white;
-
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
   border-radius: 100px;
   width: fit-content;
-
 }
+
 img {
   display: flex;
   justify-content: center;
@@ -44,6 +44,3 @@ img {
   height: 350px;
   width: 225px;
 }
-
-
-

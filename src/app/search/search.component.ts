@@ -10,7 +10,6 @@ import {
   ViewChild,
 } from '@angular/core';
 
-
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -39,10 +38,8 @@ export class SearchComponent implements OnInit {
 
   getMovieDataWithTitle = () => {
     const movieTitle = this.titleInputRef.nativeElement.value;
-
     this.movieData.titleListener(movieTitle).subscribe((data) => {
       const movieObj = data;
-
 
       this.title = Object.values(movieObj)[0];
       this.category = Object.values(movieObj)[5].split(",",1);
@@ -58,37 +55,8 @@ export class SearchComponent implements OnInit {
       this.imdbEvent.emit(this.imdb);
       this.plotEvent.emit(this.plot);
 
-      console.log(movieObj);
-
-
-
-
       return movieObj;
     });
   };
 
-
-
-  // public getMovieDataWithTitle() {
-  //   // const movieTitle = this.titleInputRef.nativeElement.value;
-
-  //   // this.movieData.titleListener(movieTitle).subscribe(data => {
-
-  //   //   const movieObj = data;
-
-  //   //   console.log(movieObj);
-
-  //   //   const title: string = Object.values(movieObj)[0];
-  //   //   const category: string = Object.values(movieObj)[5];
-  //   //   const imdb: string = Object.values(movieObj)[16];
-  //   //   const imageUrl: string = Object.values(movieObj)[13];
-  //   //   const year: string = Object.values(movieObj)[1];
-
-  //   //     // console.log(this.imdb);
-  //   //     // console.log(this.year);
-  //   //     return Object.values(movieObj)[0];
-
-  //   // })
-
-  // }
 }

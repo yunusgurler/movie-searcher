@@ -1,20 +1,15 @@
 <app-search (titleEvent)="getMovieTitle($event)" (yearEvent)="getMovieYear($event)"
   (categoryEvent)="getMovieCategory($event)" (imageUrlEvent)="getMovieImageUrl($event)"
   (imdbEvent)="getMovieImdb($event)" (plotEvent)="getMoviePlot($event)">
-
 </app-search>
-
 <div *ngIf="imageUrl" class="container">
   <div class="img-container">
     <img src={{imageUrl}}>
   </div>
-
   <div *ngIf="title, category" class="desc-container">
     <p class="category">{{category}}</p>
-
     <h4>{{title}}</h4>
     <p>Year: {{year}}</p>
-
     <p>Imdb: {{imdb}}</p>
     <p>{{plot}}</p>
   </div>
