@@ -1,0 +1,33 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
+
+  height: 200px;
+
+  margin: -8px;
+}
+.search-elements{
+  width: 500px;
+}
+input{
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 100px;
+  height: 50px;
+  padding: 15px;
+  margin-top: 8%;
+
+}
+.search-button {
+  height: 40px;
+  width: 40%;
+  margin-left: 31%;
+  margin-top: 8%;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  cursor: pointer;
+
+}
