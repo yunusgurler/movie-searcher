@@ -1,10 +1,8 @@
-import { CardComponent } from './../card/card.component';
 import { MovieService } from './../movie.service';
 import {
   Component,
   ElementRef,
   EventEmitter,
-  Input,
   OnInit,
   Output,
   ViewChild,

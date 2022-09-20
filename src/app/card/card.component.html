@@ -2,7 +2,7 @@
   (categoryEvent)="getMovieCategory($event)" (imageUrlEvent)="getMovieImageUrl($event)"
   (imdbEvent)="getMovieImdb($event)" (plotEvent)="getMoviePlot($event)">
 </app-search>
-<div *ngIf="imageUrl" class="container">
+<div *ngIf="imageUrl" class="container" [routerLink]="['/detail']" routerLinkActive="router-link-active">
   <div class="img-container">
     <img src={{imageUrl}}>
   </div>

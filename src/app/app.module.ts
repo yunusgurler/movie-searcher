@@ -7,20 +7,22 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './card/card.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
       HeaderComponent,
       SearchComponent,
-      CardComponent
+      CardComponent,
+      DetailComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

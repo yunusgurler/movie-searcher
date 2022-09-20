@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,12 +6,13 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./card.component.css'],
 })
 export class CardComponent implements OnInit {
-  title: any;
-  category: any;
-  year: any;
-  imdb: any;
-  imageUrl: any;
-  plot: any;
+  @Input() title: any;
+  @Input() category: any;
+  @Input() year: any;
+  @Input() imdb: any;
+  @Input() imageUrl: any;
+  @Input() plot: any;
+
 
   constructor() {}
 
@@ -35,4 +36,13 @@ export class CardComponent implements OnInit {
   getMoviePlot($event: any) {
     this.plot = $event;
   }
+
+  // sendDetails() {
+  //   this.imdbEventForDetail.emit(this.imdb);
+  //   this.yearEventForDetail.emit(this.year);
+  //   this.imageUrlEventForDetail.emit(this.imageUrl);
+  //   this.titleEventForDetail.emit(this.title);
+  //   this.categoryEventForDetail.emit(this.category);
+  //   this.plotEventForDetail.emit(this.plot)
+  // }
 }
